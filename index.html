@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CarteRun</title>
+    <link rel="stylesheet" href="style.css" />
+    <!--logos facebook twitter etc ↓-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <!--mieux vaut donner des classes en commun par exemple pour run, magna et tempus comme ça on centre de la même façon tous les contenus-->
+  <body>
+    <div id="run">
+      <div id="run-container">
+        <h1 class="title">Run</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt,
+          magni provident voluptas veritatis quasi nihil ea voluptatem ut earum,
+          optio iusto quo obcaecati, doloremque vero!
+        </p>
+        <button class="btn">Get started</button>
+      </div>
+
+      <div id="run-picture"></div>
+    </div>
+    <div class="line"></div>
+
+    <div id="magna">
+      <div id="magna-picture"></div>
+      <div id="magna-container">
+        <h1 class="title">Magna etiam feugiat</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque
+          molestiae repudiandae, alias, rem qui excepturi neque voluptates
+          quisquam tempora laudantium impedit quasi, tenetur quo vero aspernatur
+          quia expedita explicabo temporibus unde eveniet eligendi! Excepturi
+          blanditiis asperiores maiores vitae optio iste voluptatum repellat,
+          accusamus impedit.
+        </p>
+        <button class="btn">Learn more</button>
+      </div>
+    </div>
+
+    <div class="line"></div>
+
+    <div id="tempus">
+      <div id="tempus-container">
+        <h1 class="title">Tempus adipiscing</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias
+          ullam eaque eveniet voluptate aliquam fugiat repellendus.
+          Exercitationem illum voluptatum natus recusandae iusto fuga dolores
+          officia aliquam rem, veritatis vero sapiente eligendi expedita quam
+          fugiat pariatur alias aliquid deleniti. Enim, quaerat.
+        </p>
+        <button class="btn">Learn more</button>
+      </div>
+      <div id="tempus-picture"></div>
+    </div>
+
+    <div class="line"></div>
+
+    <div id="contact">
+      <h1 class="title">Get in touch</h1>
+
+      <form action="Get in touch" id="contact-container">
+        <div id="pseudo">
+          <label for="name">Name</label>
+          <!--correction: input type=text id=name-->
+          <textarea class="textzone" name="name" cols="30" rows="2"></textarea>
+        </div>
+
+        <div id="mail">
+          <label for="email">Email</label>
+          <textarea class="textzone" name="email" cols="30" rows="2"></textarea>
+        </div>
+
+        <div id="msg">
+          <label for="message">Message</label>
+          <textarea
+            class="textzone"
+            name="message"
+            cols="30"
+            rows="9"
+            placeholder="Si vous souhaitez écrire.."
+          ></textarea>
+        </div>
+        <input type="button" class="btn" id="send" value="Send message" />
+        <!--type submit normalement mais pour pas recharger page par erreur-->
+        <!--correction: obligatoire de mettre submit-->
+      </form>
+    </div>
+
+    <div class="line2"></div>
+
+    <footer>
+      <ul>
+        <li>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#"><i class="fa-solid fa-envelope"></i></a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,201 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(80, 80, 80);
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-weight: 100;
+  font-size: 3rem;
+}
+p {
+  line-height: 2.5rem;
+  font-size: 1.2rem;
+  color: rgb(160, 160, 160);
+}
+.btn {
+  background: white;
+  border: 1px solid rgba(160, 160, 160, 0.61);
+  border-radius: 50px;
+  height: 50px;
+  width: 150px;
+  text-transform: uppercase;
+  color: rgba(80, 80, 80, 0.623);
+  font-weight: bolder;
+  transition: 0.4s ease;
+}
+.btn:hover {
+  cursor: pointer;
+  color: rgb(140, 203, 231);
+  border: 1px solid rgb(140, 203, 231);
+}
+
+#run {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+}
+#run-container {
+  align-self: center;
+  margin: 0 auto;
+  width: 90%;
+}
+#run-picture {
+  background: url(./img/banner.jpg) right/cover fixed;
+}
+#magna {
+  display: grid;
+  grid-template-columns: 35% 65%;
+  height: 400px;
+}
+#magna-container {
+  align-self: center;
+  margin: 0 auto;
+  width: 90%;
+}
+#magna-picture {
+  background: url(./img/img-left.jpg) center/cover;
+}
+#tempus {
+  display: grid;
+  grid-template-columns: 65% 35%;
+  height: 400px;
+}
+#tempus-container {
+  align-self: center;
+  margin: 0 auto;
+  width: 90%;
+}
+#tempus-picture {
+  background: url(./img/img-right.jpg) center/cover;
+}
+.line {
+  border-top: 1px solid rgba(172, 172, 172, 0.39);
+}
+#contact {
+  text-align: center;
+}
+#contact-container {
+  width: 50%;
+  margin: 0px auto;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 2r 1fr;
+  grid-template-areas:
+    "a b"
+    "c c"
+    "d d";
+}
+#pseudo {
+  grid-area: a;
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  margin: 0px auto 30px;
+}
+#mail {
+  grid-area: b;
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  margin: 0px auto 30px;
+}
+#msg {
+  grid-area: c;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0px auto 30px;
+}
+#send {
+  grid-area: d;
+  margin: 0px auto;
+}
+textarea {
+  border: 1px solid rgba(160, 160, 160, 0.61);
+  border-radius: 5px;
+  resize: none;
+}
+label {
+  color: rgba(160, 160, 160, 0.81);
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+.line2 {
+  border-top: 1px solid rgba(172, 172, 172, 0.39);
+  width: 90%;
+  margin: 50px auto;
+}
+footer ul {
+  display: flex;
+  justify-content: space-between;
+  width: 33%;
+  min-width: 300px;
+  margin: 0 auto;
+}
+footer li {
+  list-style-type: none;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: 20px;
+}
+footer a {
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  width: 44px;
+  height: 44px;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(80, 80, 80);
+  text-decoration: none;
+  transition: 0.4s ease;
+}
+a:hover {
+  cursor: pointer;
+  color: rgb(140, 203, 231);
+  border: 1px solid rgb(140, 203, 231);
+}
+/******************* RESPONSIVE *******************/
+@media screen and (max-width: 650px) {
+  #run,
+  #magna,
+  #tempus,
+  #contact {
+    display: block;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  #run {
+    height: auto;
+  }
+  #run-picture {
+    height: 50vh;
+    margin-top: 30px;
+  }
+  footer ul {
+    min-width: 250px;
+  }
+  footer a {
+    height: 30px;
+    width: 30px;
+  }
+  footer i {
+    font-size: 0.7rem;
+  }
+  #contact {
+    text-align: center;
+  }
+  #contact-container {
+    justify-content: center;
+  }
+  #run-picture {
+    background: url(./img/banner.jpg) center/cover;
+  }
+  #run {
+    margin-bottom: 0;
+  }
+}
