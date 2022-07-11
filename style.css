@@ -35,10 +35,13 @@ p {
   grid-template-columns: 1fr 1fr;
   height: 100vh;
 }
-#run-container {
+#run-container,
+#magna-container,
+#tempus-container {
   align-self: center;
   margin: 0 auto;
   width: 90%;
+  max-height: 400px;
 }
 #run-picture {
   background: url(./img/banner.jpg) right/cover fixed;
@@ -48,11 +51,7 @@ p {
   grid-template-columns: 35% 65%;
   height: 400px;
 }
-#magna-container {
-  align-self: center;
-  margin: 0 auto;
-  width: 90%;
-}
+
 #magna-picture {
   background: url(./img/img-left.jpg) center/cover;
 }
@@ -61,11 +60,7 @@ p {
   grid-template-columns: 65% 35%;
   height: 400px;
 }
-#tempus-container {
-  align-self: center;
-  margin: 0 auto;
-  width: 90%;
-}
+
 #tempus-picture {
   background: url(./img/img-right.jpg) center/cover;
 }
@@ -79,6 +74,7 @@ p {
   width: 50%;
   margin: 0px auto;
   text-align: center;
+  justify-content: center;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 2r 1fr;
@@ -159,15 +155,34 @@ a:hover {
   color: rgb(140, 203, 231);
   border: 1px solid rgb(140, 203, 231);
 }
-/******************* RESPONSIVE *******************/
+/* ****************** RESPONSIVE 1100px ****************** */
+@media screen and (max-width: 1100px) {
+  p {
+    line-height: 1.6rem;
+    font-size: 1rem;
+  }
+}
+/* ****************** RESPONSIVE 760px ****************** */
+@media screen and (max-width: 760px) {
+  #magna,
+  #tempus {
+    height: 550px;
+  }
+}
+/* ****************** RESPONSIVE 650px ****************** */
+
 @media screen and (max-width: 650px) {
   #run,
   #magna,
   #tempus,
-  #contact {
+  #contact,
+  #contact-container {
     display: block;
     height: auto;
     margin-bottom: 20px;
+  }
+  #contact-container {
+    width: 80%;
   }
   #run {
     height: auto;
@@ -185,12 +200,6 @@ a:hover {
   }
   footer i {
     font-size: 0.7rem;
-  }
-  #contact {
-    text-align: center;
-  }
-  #contact-container {
-    justify-content: center;
   }
   #run-picture {
     background: url(./img/banner.jpg) center/cover;
